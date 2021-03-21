@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --title-fonts: 'Fira Sans', sans-serif;
+    --everthing-else-fonts: 'Inter', sans-serif;
+}
+
+body{
+    font-family: var(--everthing-else-fonts);
+}
+
+:is(h1, h2, h3, h4, h5, h6){
+    font-family: var(--title-fonts);
+}
+
+.input-label-size{
+    font-size: 1.2em;
+}
