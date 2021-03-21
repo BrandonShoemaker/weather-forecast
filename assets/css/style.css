@@ -20,3 +20,31 @@ body{
 .input-label-size{
     font-size: 1.2em;
 }
+
+.btn-submit-location, .btn-predefined-location{
+    background-color: #28a745;
+    transition: .35s;
+    box-shadow: .35em .2em .15em 0 white;
+    border: none;
+}
+
+.btn-submit-location:hover, .btn-predefined-location:hover{
+    box-shadow: .35em .2em .15em 0 #28a78588;
+}
+
+.btn-submit-location:focus, .btn-predefined-location:focus{
+    outline: none;
+}
+
+.btn-submit-location{
+    font-size: 1em;
+}
+
+.btn-predefined-location{
+    margin: 1em;
+    font-size: 1em;
+}
+
+.btn-predefined-location:hover{
+    background-color: #4aa728;
+}
