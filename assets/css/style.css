@@ -45,6 +45,10 @@ body{
     font-size: 1em;
 }
 
+.top-green-border{
+    border-top: .1em solid #28a745;
+}
+
 .btn-predefined-location:hover{
     background-color: #4aa728;
 }
