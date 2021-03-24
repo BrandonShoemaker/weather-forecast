@@ -7,6 +7,10 @@
 :root{
     --title-fonts: 'Fira Sans', sans-serif;
     --everthing-else-fonts: 'Inter', sans-serif;
+    --light-green: #28a745;
+    --off-green: #4aa728;
+    --dark-green: #28a785;
+    --dark-green-low-opac: #28a78588;
 }
 
 body{
@@ -22,14 +26,14 @@ body{
 }
 
 .btn-submit-location, .btn-predefined-location{
-    background-color: #28a745;
+    background-color: var(--light-green);
     transition: .35s;
     box-shadow: .35em .2em .15em 0 white;
     border: none;
 }
 
 .btn-submit-location:hover, .btn-predefined-location:hover{
-    box-shadow: .35em .2em .15em 0 #28a78588;
+    box-shadow: .35em .2em .15em 0 var(--dark-green-low-opac);
 }
 
 .btn-submit-location:focus, .btn-predefined-location:focus{
@@ -46,9 +50,33 @@ body{
 }
 
 .top-green-border{
-    border-top: .1em solid #28a745;
+    border-top: .1em solid var(--light-green);
 }
 
 .btn-predefined-location:hover{
-    background-color: #4aa728;
+    background-color: var(--off-green);
+}   
+
+.card {
+    transition: all .25s ease-in-out;
+    background-size: 1px 200%;
+    background-position: 0 100%;
+    background-color: white;
+    background-image: linear-gradient(0deg, var(--dark-green-low-opac) 50%, var(--dark-green) 130%);
+}
+
+.card:hover{
+    background-position: 1px 0%;
+}
+
+.forecast{
+    background-color: var(--off-green);
+}
+
+.forecast-data-container{
+    background-color: var(--dark-green-low-opac);
+}
+
+.bg-white > h5{
+    padding-bottom: 6%;
 }

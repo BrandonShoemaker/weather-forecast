@@ -17,7 +17,8 @@
     <main class="container-fluid d-inline-block m-0 p-0">
         <div class="row flex-column shadow m-0 align-content-center text-center pt-4">
             <div>
-                <form>
+                <form id="form-container">
+                    <p id="errorPrinter"></p>
                     <label class="input-label-size" for="location">Enter your location: </label>
                     <input class="ml-2 pl-2 text-success" type="text" name="location" placeholder="City, State Zip..."/>
                     <button class="ml-3 p-1 btn-success rounded-pill btn-submit-location" type="button">Submit</button>
@@ -34,41 +35,71 @@
                 <button class="btn-predefined-location p-1 text-light rounded-pill">Atlanta</button>
             </div>
         </div>
-        <div class="row flex-column m-0 align-content-center pt-5 border-bottom">
-            <div>
+        <div class="row flex-column m-0 align-content-center pt-5">
+            <h3 class="text-center pb-2">5-day forecast: </h3>
+            <div class="d-flex justify-content-between mb-5">
                 <div class="card d-inline-block mr-5 ml-5">
                     <h3 class="card-header pl-2 pt-2">Date</h3>
                     <div class="card-body">
-                        <p class="pl-2 pt-1">jknjnjn</p>
+                        <p class="pl-2 pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repellendus molestias pariatur animi neque quidem, maiores voluptates quam consectetur ipsam? Corrupti in culpa nobis facilis itaque libero iusto alias officiis?</p>
                     </div>
                 </div>
                 <div class="card d-inline-block mr-5 ml-5">
                     <h3 class="card-header pl-2 pt-2">Date</h3>
                     <div class="card-body">
-                        <p class="pl-2 pt-1">jknjnjn</p>
+                        <p class="pl-2 pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repellendus molestias pariatur animi neque quidem, maiores voluptates quam consectetur ipsam? Corrupti in culpa nobis facilis itaque libero iusto alias officiis?</p>
                     </div>
                 </div>
                 <div class="card d-inline-block mr-5 ml-5">
                     <h3 class="card-header pl-2 pt-2">Date</h3>
                     <div class="card-body">
-                        <p class="pl-2 pt-1">jknjnjn</p>
+                        <p class="pl-2 pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repellendus molestias pariatur animi neque quidem, maiores voluptates quam consectetur ipsam? Corrupti in culpa nobis facilis itaque libero iusto alias officiis?</p>
                     </div>
                 </div>
                 <div class="card d-inline-block mr-5 ml-5">
                     <h3 class="card-header pl-2 pt-2">Date</h3>
                     <div class="card-body">
-                        <p class="pl-2 pt-1">jknjnjn</p>
+                        <p class="pl-2 pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repellendus molestias pariatur animi neque quidem, maiores voluptates quam consectetur ipsam? Corrupti in culpa nobis facilis itaque libero iusto alias officiis?</p>
                     </div>
                 </div>
                 <div class="card d-inline-block mr-5 ml-5">
                     <h3 class="card-header pl-2 pt-2">Date</h3>
                     <div class="card-body">
-                        <p class="pl-2 pt-1">jknjnjn</p>
+                        <p class="pl-2 pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repellendus molestias pariatur animi neque quidem, maiores voluptates quam consectetur ipsam? Corrupti in culpa nobis facilis itaque libero iusto alias officiis?</p>
                     </div>
                 </div>
             </div>
             <div>
+                <h2 class="forecast pl-2 pt-2 pb-2 text-light mb-3">Forecast for: <span class="text-dark">11/12/1987</span></h2> 
+                <div class="ml-5 mr-5 d-flex justify-content-between">
+                    <div class="border-right border-dark flex-fill forecast-data-container">
+                        <h3 class="p-2">Temperature</h3>
+                        <div class="bg-white p-3">
+                            <h5>Current Temperature: <span id="current-temp"></span>&deg;</h5>
+                            <h5>Feels Like: <span id="real-feel"></span>&deg;</h5>
+                            <h5>High: <span id="high"></span>&deg;</h5>
+                            <h5>Low: <span id="low"></span>&deg;</h5>
+                            <h5>Humidity: <span id="humidity"></span>%</h5>
+                        </div>
+                    </div>
 
+                    <div class="border-right border-dark flex-fill forecast-data-container">
+                        <h3 class="p-2">Wind & Clouds</h3>
+                        <div class="bg-white h-100 p-3">
+                            <h5>Wind Speed: <span id="wind-speed"></span>mph</h5>
+                            <h5>Direction: <span id="wind-direction"></span>&deg;</h5>
+                            <h5>Cloud Coverage: <span id="cloudiness"></span>%</h5>
+                        </div>
+                    </div>
+
+                    <div class="flex-fill forecast-data-container">
+                        <h3 class="p-2">Sunrise & Sunset</h3>
+                        <div class="bg-white h-100 p-3">
+                            <h5>Sunrise: <span id="rise"></span>a.m.</h5>
+                            <h5>Sunset: <span id="set"></span>p.m.</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
