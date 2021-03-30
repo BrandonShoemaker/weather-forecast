@@ -20,19 +20,19 @@
                 <form id="form-container">
                     <p id="errorPrinter"></p>
                     <label class="input-label-size" for="location">Enter your location: </label>
-                    <input class="ml-2 pl-2 text-success" type="text" name="location" placeholder="City, State Zip..."/>
+                    <input class="ml-2 pl-2 text-success" type="text" name="location" placeholder="City, State Code, Country Code..."/>
                     <button class="ml-3 p-1 btn-success rounded-pill btn-submit-location" type="button">Submit</button>
                 </form>
             </div>
-            <div class="top-green-border mt-3">
-                <button class="btn-predefined-location p-1 text-light rounded-pill">Austin</button>
+            <div id="history-container" class="top-green-border mt-3">
+                <!-- <button class="btn-predefined-location p-1 text-light rounded-pill">Austin</button>
                 <button class="btn-predefined-location p-1 text-light rounded-pill">Chicago</button>
                 <button class="btn-predefined-location p-1 text-light rounded-pill">New York</button>
                 <button class="btn-predefined-location p-1 text-light rounded-pill">Orlando</button>
                 <button class="btn-predefined-location p-1 text-light rounded-pill">San Francisco</button>
                 <button class="btn-predefined-location p-1 text-light rounded-pill">Seattle</button>
                 <button class="btn-predefined-location p-1 text-light rounded-pill">Denver</button>
-                <button class="btn-predefined-location p-1 text-light rounded-pill">Atlanta</button>
+                <button class="btn-predefined-location p-1 text-light rounded-pill">Atlanta</button> -->
             </div>
         </div>
         <div class="row flex-column m-0 align-content-center pt-5">
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div>
-                <h2 class="forecast pl-2 pt-2 pb-2 text-light mb-3">Forecast for: <span class="text-dark">11/12/1987</span></h2> 
+                <h2 class="forecast pl-2 pt-2 pb-2 text-light mb-3">Forecast for: <span id="current-date" class="text-dark"></span></h2> 
                 <div class="ml-5 mr-5 d-flex justify-content-between">
                     <div class="border-right border-dark flex-fill forecast-data-container">
                         <h3 class="p-2">Temperature</h3>
@@ -90,6 +90,7 @@
                             <h5>High: <span id="high"></span>&deg;</h5>
                             <h5>Low: <span id="low"></span>&deg;</h5>
                             <h5>Humidity: <span id="humidity"></span>%</h5>
+                            <div class="fw-bold d-inline-block">UV: <span id="uv"></span></div>
                         </div>
                     </div>
 
@@ -105,8 +106,8 @@
                     <div class="flex-fill forecast-data-container">
                         <h3 class="p-2">Sunrise & Sunset</h3>
                         <div class="bg-white h-100 p-3">
-                            <h5>Sunrise: <span id="rise"></span>a.m.</h5>
-                            <h5>Sunset: <span id="set"></span>p.m.</h5>
+                            <h5>Sunrise: <span id="rise"></span></h5>
+                            <h5>Sunset: <span id="set"></span></h5>
                         </div>
                     </div>
                 </div>
