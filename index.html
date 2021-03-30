@@ -1,43 +1,45 @@
 <html lang="en">
 <head>
+    <!-- basic head stuff -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- gets fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter:wght@300&display=swap" rel="stylesheet">
+    <!-- links styles sheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- title -->
     <title>Weather Forecast</title>
 </head>
 <body>
+    <!-- Top header with h1 tag -->
     <header class="text-center text-light display-4 bg-success p-2 m-0">
         <h1>Weather Forecast</h1>
     </header>
+    <!-- main content -->
     <main class="container-fluid d-inline-block m-0 p-0">
+        <!-- container for history and input -->
         <div class="row flex-column shadow m-0 align-content-center text-center pt-4">
             <div>
                 <form id="form-container">
-                    <p id="errorPrinter" class="p-1 bg-danger"></p>
+                    <p id="errorPrinter" class="text-danger"></p>
                     <label class="input-label-size" for="location">Enter your location: </label>
                     <input class="ml-2 pl-2 text-success" type="text" name="location" placeholder="City, State Code, Country Code..."/>
                     <button class="ml-3 p-1 btn-success rounded-pill btn-submit-location" type="button">Submit</button>
                 </form>
             </div>
             <div id="history-container" class="top-green-border mt-3">
-                <!-- <button class="btn-predefined-location p-1 text-light rounded-pill">Austin</button>
-                <button class="btn-predefined-location p-1 text-light rounded-pill">Chicago</button>
-                <button class="btn-predefined-location p-1 text-light rounded-pill">New York</button>
-                <button class="btn-predefined-location p-1 text-light rounded-pill">Orlando</button>
-                <button class="btn-predefined-location p-1 text-light rounded-pill">San Francisco</button>
-                <button class="btn-predefined-location p-1 text-light rounded-pill">Seattle</button>
-                <button class="btn-predefined-location p-1 text-light rounded-pill">Denver</button>
-                <button class="btn-predefined-location p-1 text-light rounded-pill">Atlanta</button> -->
+ 
             </div>
         </div>
+        <!-- containers fo r card title and cards -->
         <div class="row flex-column m-0 align-content-center pt-5">
             <h3 class="text-center pb-2">5-day forecast: </h3>
-            <div id="card-container" class="d-flex justify-content-between mb-5">
+            <div id="card-container" class="d-flex flex-wrap justify-content-between mb-5">
                 <div class="card d-inline-block mr-5 ml-5">
                     <h3 class="card-header pl-2 pt-2">Date</h3>
                     <div class="card-body">
@@ -79,6 +81,7 @@
                     </div>
                 </div>
             </div>
+            <!-- container for all current day stats -->
             <div>
                 <h2 class="forecast pl-2 pt-2 pb-2 text-light mb-3">Forecast for: <span id="current-date" class="text-dark"></span></h2> 
                 <div class="ml-5 mr-5 d-flex justify-content-between">
@@ -114,6 +117,7 @@
             </div>
         </div>
     </main>
+    <!-- importing jquery, bootsrap, and main script -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

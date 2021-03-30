@@ -1,9 +1,11 @@
+/* document rules */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* my variables */
 :root{
     --title-fonts: 'Fira Sans', sans-serif;
     --everthing-else-fonts: 'Inter', sans-serif;
@@ -13,18 +15,22 @@
     --dark-green-low-opac: #28a78588;
 }
 
+/* rules set default font */
 body{
     font-family: var(--everthing-else-fonts);
 }
 
+/* rules set all headers to have default header */
 :is(h1, h2, h3, h4, h5, h6){
     font-family: var(--title-fonts);
 }
 
+/* rules for the size of the label */
 .input-label-size{
     font-size: 1.2em;
 }
 
+/* rules for background color and effects */
 .btn-submit-location, .btn-predefined-location{
     background-color: var(--light-green);
     transition: .35s;
@@ -32,31 +38,36 @@ body{
     border: none;
 }
 
+/* when hovered on, change box shadow colo */
 .btn-submit-location:hover, .btn-predefined-location:hover{
     box-shadow: .35em .2em .15em 0 var(--dark-green-low-opac);
 }
 
+/* riles to remove outline */
 .btn-submit-location:focus, .btn-predefined-location:focus{
     outline: none;
 }
 
+/* rules for increasing size */
 .btn-submit-location{
     font-size: 1em;
 }
 
+/* rules to add spacing */
 .btn-predefined-location{
     margin: 1em;
     font-size: 1em;
 }
-
+/* rules for green border above history */
 .top-green-border{
     border-top: .1em solid var(--light-green);
 }
-
+/* rules for different color on hover */
 .btn-predefined-location:hover{
     background-color: var(--off-green);
 }   
 
+/* rules for redefining some rules in the bootstrap card */
 .card {
     transition: all .25s ease-in-out;
     background-size: 1px 200%;
@@ -64,11 +75,11 @@ body{
     background-color: white;
     background-image: linear-gradient(0deg, var(--dark-green-low-opac) 50%, var(--dark-green) 130%);
 }
-
+/* rules for when you hover on a card */
 .card:hover{
     background-position: 1px 0%;
 }
-
+/* next 2: rules that change background */
 .forecast{
     background-color: var(--off-green);
 }
@@ -77,6 +88,7 @@ body{
     background-color: var(--dark-green-low-opac);
 }
 
+/* rules for making more apcing */
 .bg-white > h5{
     padding-bottom: 6%;
 }
